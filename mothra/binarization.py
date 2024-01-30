@@ -16,7 +16,7 @@ RULER_CROP_MARGIN = 0.025
 
 # Testing weights for segmentation of four classes (background, tags, ruler,
 # lepidopteran).
-WEIGHTS_BIN = './models/segmentation_test-4classes.pkl'
+WEIGHTS_BIN = './models/battus10_segmentation_test-4classes-resnet34-b2-e10.pth'
 
 # Setting a tolerance in pixels on where ruler, tags can start, according to
 # the lepidopteran.
@@ -98,7 +98,9 @@ def binarization(image_rgb, weights=WEIGHTS_BIN):
     if isinstance(weights, str):
         weights = Path(weights)
 
-    connection.download_weights(weights)
+    # connection.download_weights(weights) 
+    # TODO: export the unet-learner to pickle file using learner.export
+    print("Skip weight check and use the local weights: ", weights)
     learner = load_learner(fname=weights)
 
     print('Processing U-net...')
