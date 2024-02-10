@@ -10,12 +10,14 @@ outputs/
 .ipynb_checkpoints/
 **/*.prof
 **/*.cache
-**/*.png
+
 .ropeproject
 cachedir
 # Ignoring deep learning models.
-models/
-models/*.pkl  # files at https://gitlab.com/mothra/mothra-data/-/tree/main/models
+**/*.pt
+**/*.pth
+**/*.pkl 
+models/*.pkl # files at https://gitlab.com/mothra/mothra-data/-/tree/main/models
 # Ignoring VSCode/VSCodium files and folders.
 .vscode/*
 settings.json

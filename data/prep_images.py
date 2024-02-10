@@ -1,3 +1,4 @@
+import os
 import glob
 import numpy as np
 
@@ -19,7 +20,9 @@ def pixel_to_index(image):
     image : array-like
         Image with pixels converted to sequential indexes.
     """
-    for idx, element in enumerate(np.unique(image)):
+    labels_uq = np.unique(image)
+    for idx, element in enumerate(labels_uq):
+        print(idx, " --> Gray:", element)
         image[image == element] = idx
     return image
 
@@ -39,13 +42,15 @@ def pixels_to_indexes(folder, ext):
     None
     """
     lookup_path = Path(folder+"/"+f"*.{ext}")
-    print(lookup_path)
+    output_path = lookup_path.parent.parent / "labels"
+    print(lookup_path, " --> ", output_path)
     for filename in glob.glob(str(lookup_path)):
-        print("> ",filename)
         image = img_as_ubyte(io.imread(filename, as_gray=True))
+        outfile = output_path / Path(filename).name
+        print("> ",filename, " --> ", outfile)
         if list(np.unique(image)) != [0, 1, 2, 3]:
             image = pixel_to_index(image)
-            io.imsave(arr=image, fname=filename, check_contrast=False)
+            io.imsave(arr=image, fname=outfile, check_contrast=False)
 
     return None
 
@@ -65,15 +70,34 @@ def image_to_grayscale(folder, ext):
     None
     """
     lookup_path = Path(folder+"/"+f"*.{ext}")
-    print(lookup_path)
+    output_path = lookup_path.parent.parent / "labels_gray"
+    print(lookup_path, " --> ", output_path)
     for filename in glob.glob(str(lookup_path)):
-        print("> ",filename)
         image = img_as_ubyte(io.imread(filename, as_gray=True))
+        outfile = output_path / Path(filename).name
+        print("> ",filename, " --> ", outfile)
         if image is not None:
-            io.imsave(arr=image, fname=filename, check_contrast=False)
+            print("Gray:", np.unique(image))
+            io.imsave(arr=image, fname=outfile, check_contrast=False)
 
     return None
 
+def list_files(filepath, filetype):
+   paths = []
+   for root, dirs, files in os.walk(filepath):
+      for file in files:
+         if file.lower().endswith(filetype.lower()):
+            paths.append(os.path.join(root, file))
+   return(paths)
+
+def list_leaf_dirs(filepath, filetype):
+   paths = []
+   for root, dirs, files in os.walk(filepath):
+      if not dirs:
+         print("Leaf: {}".format(root))
+   return(paths)
+
 if __name__ == "__main__":
-    #pixels_to_indexes(folder="labels_rgb", ext="png")
-    image_to_grayscale(folder="labels_rgb", ext="png")
+    pixels_to_indexes(folder="training_images/labels_rgb", ext="png")
+    image_to_grayscale(folder="training_images/labels_rgb", ext="png")
+    # list_leaf_dirs(folder = "../UF_museum_data_2023", ext= ".JPG")

@@ -12,6 +12,8 @@ python misc.py
 1  --> Gray: 54   : Lepidopteran
 2  --> Gray: 182  : Tag
 3  --> Gray: 237  : Ruler
+
+Reorder the label IDs according to the color based indexing in 
 ```
 
 ##### Dev Environment
