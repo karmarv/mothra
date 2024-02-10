@@ -16,7 +16,7 @@ RULER_CROP_MARGIN = 0.025
 
 # Testing weights for segmentation of four classes (background, tags, ruler,
 # lepidopteran).
-WEIGHTS_BIN = './models/battus10_segmentation_test-4classes-resnet34-b2-e10.pkl'
+WEIGHTS_BIN = './data/battus10_segmentation_test-4classes-resnet18-b2-e10.pkl'
 
 # Setting a tolerance in pixels on where ruler, tags can start, according to
 # the lepidopteran.
@@ -108,7 +108,7 @@ def binarization(image_rgb, weights=WEIGHTS_BIN):
     print("Class shape: ", classes.shape)
     print("Class Ids: ", np.unique(classes))
     
-    back_bin, tags_bin, ruler_bin, lepidop_bin = np.asarray(classes)[:4]
+    back_bin, lepidop_bin, tags_bin, ruler_bin  = np.asarray(classes)[:4]
 
     # rescale the predicted images back up and binarize them.
     back_bin = img_as_bool(_rescale_image(image_rgb, back_bin))
@@ -123,10 +123,12 @@ def binarization(image_rgb, weights=WEIGHTS_BIN):
 
     from skimage.io import imsave
     num = np.random.randint(1,10)
-    imsave('image_back_{}.png'.format(num), back_bin)
-    imsave('image_tags_{}.png'.format(num), tags_bin)
-    imsave('image_ruler_{}.png'.format(num), ruler_bin)
-    imsave('image_lepidop_{}.png'.format(num), lepidop_bin)
+    imsave('data/results/debug/{}_image_back.png'.format(num), back_bin)
+    imsave('data/results/debug/{}_image_lepidop.png'.format(num), lepidop_bin)
+    imsave('data/results/debug/{}_image_tags.png'.format(num), tags_bin)
+    imsave('data/results/debug/{}_image_ruler.png'.format(num), ruler_bin)
+    
+    
 
     return tags_bin, ruler_bin, lepidop_bin
 
