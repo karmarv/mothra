@@ -15,3 +15,7 @@
     - [Insert Screenshot]
 - Export the project as CamVid 
     - [Insert Screenshot]
+
+
+### FastAI Training Notebook
+- UNET model for semantic segmentation `train.ipynb`
