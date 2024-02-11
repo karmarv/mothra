@@ -1,5 +1,6 @@
 import numpy as np
 import scipy as sp
+from skimage.io import imsave
 from skimage.measure import label, regionprops
 from skimage.transform import rescale
 from skimage.util import img_as_bool
@@ -16,7 +17,7 @@ RULER_CROP_MARGIN = 0.025
 
 # Testing weights for segmentation of four classes (background, tags, ruler,
 # lepidopteran).
-WEIGHTS_BIN = './data/battus10_segmentation_test-4classes-resnet18-b2-e10.pkl'
+WEIGHTS_BIN = './models/battus10_segmentation_test-4classes-resnet18-b2-e20.pkl'
 
 # Setting a tolerance in pixels on where ruler, tags can start, according to
 # the lepidopteran.
@@ -120,16 +121,6 @@ def binarization(image_rgb, weights=WEIGHTS_BIN):
     tags_bin = sp.ndimage.binary_fill_holes(tags_bin)
     ruler_bin = sp.ndimage.binary_fill_holes(ruler_bin)
     lepidop_bin = sp.ndimage.binary_fill_holes(lepidop_bin)
-
-    from skimage.io import imsave
-    num = np.random.randint(1,10)
-    imsave('data/results/debug/{}_image_back.png'.format(num), back_bin)
-    imsave('data/results/debug/{}_image_lepidop.png'.format(num), lepidop_bin)
-    imsave('data/results/debug/{}_image_tags.png'.format(num), tags_bin)
-    imsave('data/results/debug/{}_image_ruler.png'.format(num), ruler_bin)
-    
-    
-
     return tags_bin, ruler_bin, lepidop_bin
 
 
@@ -204,9 +195,10 @@ def main(image_rgb, axes=None):
     lepidop_bin = return_largest_region(lepidop_bin)
 
     # removing possible noise from ruler and tags before proceeding.
-    _, _, max_row, max_col = return_bbox_largest_region(lepidop_bin)
-    ruler_bin[:max_row-TOL_ELEM, :max_col-TOL_ELEM] = False
-    tags_bin[:max_row-TOL_ELEM, :max_col-TOL_ELEM] = False
+    min_row, min_col, max_row, max_col = return_bbox_largest_region(lepidop_bin)
+    print("Lepidopteran: BBox - ", min_row, min_col, max_row, max_col)
+    ruler_bin[:min_row-TOL_ELEM, :min_col-TOL_ELEM] = False
+    tags_bin[:min_row-TOL_ELEM, :min_col-TOL_ELEM] = False
 
     # detecting where the ruler starts.
     _, top_ruler = ruler_detection.main(image_rgb, ruler_bin, axes)
@@ -219,5 +211,11 @@ def main(image_rgb, axes=None):
         axes[1].set_title('Binarized lepidopteran')
     if axes and axes[3]:
         axes[3].axvline(x=first_tag_edge, color='c', linestyle='dashed')
+
+    # Debug Image        
+    num = np.random.randint(1,10)
+    imsave('data/results/debug/{}_bin_image_lepidop.png'.format(num), lepidop_bin)
+    imsave('data/results/debug/{}_bin_image_tags.png'.format(num), tags_bin)
+    imsave('data/results/debug/{}_bin_image_ruler.png'.format(num), ruler_bin)
 
     return tags_bin, ruler_bin, lepidop_bin

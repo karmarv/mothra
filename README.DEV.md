@@ -5,16 +5,7 @@ Mothra analyzes images of lepidopterans — mainly butterflies and moths — and
 - Adapted for UF Museum samples
 - extract specific details and measurements of body sizes for each image in the UF Museum dataset "../UF_museum_data_2023/231017_Battus_philenor_polydamas_FLMNH.csv"
 
-```
-python misc.py
 
-0  --> Gray: 0    : Back 
-1  --> Gray: 54   : Lepidopteran
-2  --> Gray: 182  : Tag
-3  --> Gray: 237  : Ruler
-
-Reorder the label IDs according to the color based indexing in 
-```
 
 ##### Dev Environment
 
