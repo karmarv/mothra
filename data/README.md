@@ -19,3 +19,6 @@
 
 ### FastAI Training Notebook
 - UNET model for semantic segmentation `train.ipynb`
+    - Learner export Model saved 
+      - Epoch10 `training_images/battus10_segmentation_test-4classes-resnet18-b2-e10.pkl`
+      - Epoch20 `training_images/battus10_segmentation_test-4classes-resnet18-b2-e20.pkl`
