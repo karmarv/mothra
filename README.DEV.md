@@ -24,9 +24,53 @@ pip install -r requirements.txt
 ```
 python pipeline_battus.py --detailed_plot -ar -i ./data/val_images/images -o ./data/results/val_images -csv ./data/results/val_images/results.csv
 ```
-- Ruler segments are not working out. Need to train the segmentation model with new data
+Issues: [TODO]
+- Re-trained the segmentation model with new data "models/battus10_segmentation_test-4classes-resnet18-b2-e20.pkl" for clean ruler segments
+- Ruler segments analysis code is not working. [In-Progress] 
 
 ```
 PYTHONPATH=. pytest
 
+```
+
+
+##### Test on Original Mothra input_images
+
+```
+(mothra) rahul@karmax:/mnt/c/workspace/eebio/battus-museum/mothra-og/mothra-og$ python pipeline.py --detailed_plot -ar -i ./input_images/ -o ./input_images/result/ -csv  ./input_images/result/results.csv
+
+Image 1/1 : BMNHE_500607.JPG
+Couldn't determine EXIF image angle
+Processing U-net...
+Ruler row(min,max)=2569,3455, col(min,max)=0,5183
+Focus shape (y,x)- (886, 5183)
+T space - 91.12087912087912
+x single - [3701, 3792.120879120879]
+x multpl - [3701, 4612.208791208791]
+Ruler row(min,max)=2569,3455, col(min,max)=0,5183
+Focus shape (y,x)- (886, 5183)
+T space - 91.12087912087912
+x single - [3701, 3792.120879120879]
+x multpl - [3701, 4612.208791208791]
+Processing U-net...
+Ruler row(min,max)=2569,3455, col(min,max)=0,5183
+Focus shape (y,x)- (886, 5183)
+T space - 91.12087912087912
+x single - [3701, 3792.120879120879]
+x multpl - [3701, 4612.208791208791]
+Processing U-net...
+Ruler row(min,max)=2569,3455, col(min,max)=0,5183
+Focus shape (y,x)- (886, 5183)
+T space - 91.12087912087912
+x single - [3701, 3792.120879120879]
+x multpl - [3701, 4612.208791208791]
+Measurements:
+* left_wing: 13.75 mm
+* right_wing: 13.69 mm
+* left_wing_center: 17.48 mm
+* right_wing_center: 17.35 mm
+* wing_span: 29.41 mm
+* wing_shoulder: 3.92 mm
+Identifying position and gender...
+* Could not calculate position and gender
 ```

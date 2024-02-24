@@ -31,8 +31,8 @@ def _rescale_image(image_refer, image_to_rescale):
     return rescale(image=image_to_rescale, scale=scale_ratio)
 
 
-def find_tags_edge(tags_bin, top_ruler, axes=None):
-    """Find the edge between the tag area on the right and the lepidopteran
+def find_tags_edge(tags_bin, side_ruler, axes=None):
+    """Find the edge between the tag area on the left and the lepidopteran
     area, returning the corresponding X coordinate of that vertical line.
 
     Parameters
@@ -51,7 +51,7 @@ def find_tags_edge(tags_bin, top_ruler, axes=None):
         lepidopteran area.
     """
     # Make sure ruler is cropped out with some extra margin.
-    tags_bin = tags_bin[:top_ruler - int(RULER_CROP_MARGIN * tags_bin.shape[0])]
+    tags_bin = tags_bin[:side_ruler - int(RULER_CROP_MARGIN * tags_bin.shape[0])]
 
     # Calculate regionprops
     tags_regions = regionprops(label(tags_bin))
@@ -106,9 +106,8 @@ def binarization(image_rgb, weights=WEIGHTS_BIN):
 
     print('Processing U-net...')
     _, _, classes = learner.predict(image_rgb)
-    print("Class shape: ", classes.shape)
-    print("Class Ids: ", np.unique(classes))
-    
+    print("Result shape: ", classes.shape)
+    # Unpack result segmentation masks    
     back_bin, lepidop_bin, tags_bin, ruler_bin  = np.asarray(classes)[:4]
 
     # rescale the predicted images back up and binarize them.
@@ -197,14 +196,15 @@ def main(image_rgb, axes=None):
     # removing possible noise from ruler and tags before proceeding.
     min_row, min_col, max_row, max_col = return_bbox_largest_region(lepidop_bin)
     print("Lepidopteran: BBox - ", min_row, min_col, max_row, max_col)
-    ruler_bin[:min_row-TOL_ELEM, :min_col-TOL_ELEM] = False
-    tags_bin[:min_row-TOL_ELEM, :min_col-TOL_ELEM] = False
+    # tags and ruler are to the left of sample so setting sample region as empty in ruler and tags mask
+    ruler_bin[min_row-TOL_ELEM:, min_col-TOL_ELEM:] = False
+    tags_bin[min_row-TOL_ELEM:, min_col-TOL_ELEM:] = False
 
     # detecting where the ruler starts.
-    _, top_ruler = ruler_detection.main(image_rgb, ruler_bin, axes)
+    _, side_ruler = ruler_detection.main(image_rgb, ruler_bin, axes)
 
     # detecting where the tags start.
-    first_tag_edge = find_tags_edge(tags_bin, top_ruler, axes)
+    first_tag_edge = find_tags_edge(tags_bin, side_ruler, axes)
 
     if axes and axes[1]:
         axes[1].imshow(lepidop_bin)
