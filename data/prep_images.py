@@ -98,6 +98,8 @@ def list_leaf_dirs(filepath, filetype):
    return(paths)
 
 if __name__ == "__main__":
-    pixels_to_indexes(folder="training_images/labels_rgb", ext="png")
-    image_to_grayscale(folder="training_images/labels_rgb", ext="png")
+    pixels_to_indexes(folder="battus100/training_images/labels_rgb", ext="png")
+    image_to_grayscale(folder="battus100/training_images/labels_rgb", ext="png")
+    pixels_to_indexes(folder="battus100/val_images/labels_rgb", ext="png")
+    image_to_grayscale(folder="battus100/val_images/labels_rgb", ext="png")
     # list_leaf_dirs(folder = "../UF_museum_data_2023", ext= ".JPG")
