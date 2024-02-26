@@ -13,12 +13,17 @@
     - [Insert Screenshot]
 - Use SAM for semi-automated mask labeling
     - [Insert Screenshot]
-- Export the project as CamVid 
+- Export the project as CamVid from Battus labeling project 
     - [Insert Screenshot]
+    - Copy training and validation images to the battus100 folders
+    - Run the [./prep_images.py](./prep_images.py) script to setup the grayscale and label images 
 
 
 ### FastAI Training Notebook
 - UNET model for semantic segmentation `train.ipynb`
-    - Learner export Model saved 
+    - Learner export Model saved upon training on Battus10 dataset
       - Epoch10 `training_images/battus10_segmentation_test-4classes-resnet18-b2-e10.pkl`
       - Epoch20 `training_images/battus10_segmentation_test-4classes-resnet18-b2-e20.pkl`
+    - Train the models on Battus100 dataset for epoch50
+      - Epoch50 [TODO]
+      
