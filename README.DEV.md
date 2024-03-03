@@ -10,9 +10,15 @@ Mothra analyzes images of lepidopterans — mainly butterflies and moths — and
 ##### Dev Environment
 
 ```
+conda env remove -n mothra
 conda create -n mothra python=3.8 opencv jupyterlab -c conda-forge
 conda activate mothra
 pip install -r requirements.txt
+
+```
+```
+pip install torch==1.13.1+cu116 torchvision==0.14.1+cu116 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu116
+conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 pytorch-cuda=11.6 -c pytorch -c nvidia
 ```
 - binarization
 ```
