@@ -21,9 +21,12 @@
 
 ### FastAI Training Notebook
 - UNET model for semantic segmentation [`train.ipynb`](./train.ipynb)
-    - Learner export Model saved upon training on Battus10 dataset
-      - Epoch10 `training_images/battus10_segmentation_test-4classes-resnet18-b2-e10.pkl`
-      - Epoch20 `training_images/battus10_segmentation_test-4classes-resnet18-b2-e20.pkl`
+  - References:
+    - FastAI - https://colab.research.google.com/github/visual-layer/vl-datasets/blob/main/notebooks/train-fastai.ipynb
+    - FastAI - https://github.com/ashutoshraj/Dynamic-Unet/blob/master/caravan-work.ipynb
+  - Learner export Model saved upon training on Battus10 dataset
+    - Epoch10 `training_images/battus10_segmentation_test-4classes-resnet18-b2-e10.pkl`
+    - Epoch20 `training_images/battus10_segmentation_test-4classes-resnet18-b2-e20.pkl`
 - Train the models on Battus100 dataset for epoch50 [`train.py`](./train.py)
   - Epoch50 [TODO]
   ```
