@@ -80,3 +80,17 @@ Measurements:
 Identifying position and gender...
 * Could not calculate position and gender
 ```
+
+
+###### Output/Results
+
+#### Validate accuracy
+- Add wingspan, left, right measurements in "mm" to the battus 100 dataset 
+    - subset the larger metadata excel sheet based on the filename [Rahul]
+    - share the set with Vineesha for adding the actual measurement as ground truth information [Vineesha]
+        - Add columns [image_id	left_wing (mm)	right_wing (mm)	left_wing_center (mm)	right_wing_center (mm)	wing_span (mm)	wing_shoulder (mm)]
+- Run the analysis for all 100 images using mothra [Rahul]
+    - evaluate the results accuracy based on the human labeled ground truth (length in mm)
+    - tune or tweak the model to obtain the best accuracy possible given the measurements
+- Run the model on all musuem specimens to generate results [Rahul]
+- Spot check the results on random 100 images to verify the measurements correctness [Vineesha]
