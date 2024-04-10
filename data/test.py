@@ -56,6 +56,6 @@ if __name__ == "__main__":
     # Data variables
     cwd = Path.cwd()
 
-    val_image_path = os.path.join(cwd, "battus10", "val_images","images", "IMG_3870.JPG")
-    weights_path = os.path.join(cwd, "battus100", "training_images", "battus10_segmentation_test-4classes_resnet34_b4e50s800.pkl")
+    val_image_path = os.path.join(cwd, "battus10", "val_images","images", "IMG_2895.JPG")
+    weights_path = os.path.join(cwd, "battus100", "training_images", "battus100_segmentation_test-4classes_resnet34_b4e50s800.pkl")
     test(val_image_path, weights_path)
