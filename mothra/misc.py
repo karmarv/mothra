@@ -112,6 +112,12 @@ def label_func(image):
     """Function used to label images while training. Required by fastai."""
     return path/"labels"/f"{image.stem}{LABEL_EXT}"
 
+# required by fastai while predicting:
+def acc_camvid(inp, targ):
+  background_code=0
+  targ = targ.squeeze(1)
+  mask = targ != background_code
+  return (inp.argmax(dim=1)[mask]==targ[mask]).float().mean()
 
 def process_paths_in_input(input_name):
     """Helper function. Process the input argument and returns the images

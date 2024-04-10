@@ -17,7 +17,8 @@ RULER_CROP_MARGIN = 0.025
 
 # Testing weights for segmentation of four classes (background, tags, ruler,
 # lepidopteran).
-WEIGHTS_BIN = './models/battus10_segmentation_test-4classes-resnet18-b2-e20.pkl'
+#WEIGHTS_BIN = './models/battus10_segmentation_test-4classes-resnet18-b2-e20.pkl'
+WEIGHTS_BIN = './models/battus100_segmentation_test-4classes_resnet34_b4e50s800.pkl'
 
 # Setting a tolerance in pixels on where ruler, tags can start, according to
 # the lepidopteran.
@@ -106,7 +107,7 @@ def binarization(image_rgb, weights=WEIGHTS_BIN):
 
     print('Processing U-net...')
     _, _, classes = learner.predict(image_rgb)
-    print("Result shape: ", classes.shape)
+    #print("Result shape: ", classes.shape)
     # Unpack result segmentation masks    
     back_bin, lepidop_bin, tags_bin, ruler_bin  = np.asarray(classes)[:4]
 
@@ -187,15 +188,14 @@ def main(image_rgb, axes=None):
         Binary image containing the lepidopteran in image_rgb.
     """
     # binarizing the input image and separating its elements.
-    tags_bin, ruler_bin, lepidop_bin = binarization(image_rgb,
-                                                    weights=WEIGHTS_BIN)
+    tags_bin, ruler_bin, lepidop_bin = binarization(image_rgb, weights=WEIGHTS_BIN)
 
     # if the binary image has more than one region, returns the largest one.
     lepidop_bin = return_largest_region(lepidop_bin)
 
     # removing possible noise from ruler and tags before proceeding.
     min_row, min_col, max_row, max_col = return_bbox_largest_region(lepidop_bin)
-    print("Lepidopteran: BBox - ", min_row, min_col, max_row, max_col)
+    #print("Lepidopteran: BBox - ", min_row, min_col, max_row, max_col)
     # tags and ruler are to the left of sample so setting sample region as empty in ruler and tags mask
     ruler_bin[min_row-TOL_ELEM:, min_col-TOL_ELEM:] = False
     tags_bin[min_row-TOL_ELEM:, min_col-TOL_ELEM:] = False
@@ -213,9 +213,9 @@ def main(image_rgb, axes=None):
         axes[3].axvline(x=first_tag_edge, color='c', linestyle='dashed')
 
     # Debug Image        
-    num = np.random.randint(1,10)
-    imsave('data/results/debug/{}_bin_image_lepidop.png'.format(num), lepidop_bin)
-    imsave('data/results/debug/{}_bin_image_tags.png'.format(num), tags_bin)
-    imsave('data/results/debug/{}_bin_image_ruler.png'.format(num), ruler_bin)
+    #num = np.random.randint(1,10)
+    #imsave('data/results/debug/{}_bin_image_lepidop.png'.format(num), lepidop_bin)
+    #imsave('data/results/debug/{}_bin_image_tags.png'.format(num), tags_bin)
+    #imsave('data/results/debug/{}_bin_image_ruler.png'.format(num), ruler_bin)
 
     return tags_bin, ruler_bin, lepidop_bin

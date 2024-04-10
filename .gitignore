@@ -6,7 +6,6 @@ pictures/
 input_images/
 figures/
 outputs/
-*.csv
 .ipynb_checkpoints/
 **/*.prof
 **/*.cache

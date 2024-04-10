@@ -8,8 +8,9 @@ import matplotlib.patches as patches
 
 from .cache import memory
 
-RULER_TOP = 0.7
-RULER_LEFT = 0.2
+RULER_TOP = 0.1
+RULER_BOT = 0.9
+RULER_LEFT = 0.1
 RULER_RIGHT = 0.4
 FIRST_INDEX_THRESHOLD = 0.9
 LINE_WIDTH = 40
@@ -136,7 +137,7 @@ def main(image_rgb, ruler_bin, axes=None):
     ruler_row, ruler_col = np.nonzero(ruler_bin)
     top_ruler = int(ruler_row.min())
     side_ruler = int(ruler_col.min())
-    print("Ruler row(min,max)={},{}, col(min,max)={},{} ".format(ruler_row.min(), ruler_row.max(), ruler_col.min(), ruler_col.max()))
+    #print("Ruler row(min,max)={},{}, col(min,max)={},{} ".format(ruler_row.min(), ruler_row.max(), ruler_col.min(), ruler_col.max()))
 
     # returning a binary version of the ruler, numbers and ticks included.
     focus = ~binarize_ruler(image_rgb[ruler_row.min():ruler_row.max(),
@@ -144,12 +145,12 @@ def main(image_rgb, ruler_bin, axes=None):
 
     # Removing the numbers in the ruler to denoise the fourier transform analysis
     focus_numbers_filled = remove_numbers(focus)
-    print("Focus shape (y,x)- {}".format(focus_numbers_filled.shape))
+    #print("Focus shape (y,x)- {}".format(focus_numbers_filled.shape))
     # Cropping the center of the ruler to improve detection
-    up_trim = int(0.1*focus_numbers_filled.shape[0])        # Trim on y-axis (ruler start to end)
-    down_trim = int(0.9*focus_numbers_filled.shape[0])
-    left_focus = int(0.1*focus_numbers_filled.shape[1])     # Trim on x-axis (ruler gradings towards left)
-    right_focus = int(0.4*focus_numbers_filled.shape[1])
+    up_trim = int(RULER_TOP*focus_numbers_filled.shape[0])        # Trim on y-axis (ruler start to end)
+    down_trim = int(RULER_BOT*focus_numbers_filled.shape[0])
+    left_focus = int(RULER_LEFT*focus_numbers_filled.shape[1])     # Trim on x-axis (ruler gradings towards left)
+    right_focus = int(RULER_RIGHT*focus_numbers_filled.shape[1])
     focus_numbers_filled = focus_numbers_filled[up_trim:down_trim, left_focus:right_focus]
 
     means = np.mean(focus_numbers_filled, axis=1)
@@ -161,25 +162,23 @@ def main(image_rgb, ruler_bin, axes=None):
     t_space = 1 * fourier(sums, axes)
     print("T space - {}".format(t_space))
     x_single = [side_ruler + first_index,
-                side_ruler + first_index +
-                t_space]
+                side_ruler + first_index + t_space]
     y = np.array([top_ruler, top_ruler])
     x_mult = [side_ruler + first_index,
-              side_ruler + first_index +
-              t_space * 10]
+              side_ruler + first_index + t_space * 10]
     print("x single - {}".format(x_single))
     print("x multpl - {}".format(x_mult))
     # plotting.
     if axes and axes[0]:
-        axes[0].fill_betweenx(x_single, y, y + LINE_WIDTH, color='red', linewidth=0)
-        axes[0].fill_betweenx(x_mult, y - LINE_WIDTH, y, color='blue', linewidth=0)
+        axes[0].fill_betweenx(x_single, x_single[1], x_single[1] + LINE_WIDTH, color='red', linewidth=0)
+        axes[0].fill_betweenx(x_mult, x_mult[1] - LINE_WIDTH, x_mult[1], color='blue', linewidth=0)
 
     if axes and axes[3]:
         rect = patches.Rectangle((side_ruler, top_ruler+up_trim),
                                  right_focus,
                                  down_trim,
-                                 linewidth=1, edgecolor='r', facecolor='none')
-        axes[3].axvline(x=side_ruler, color='b', linestyle='dashed')
+                                 linewidth=1, edgecolor='red', facecolor='none')
+        axes[3].axvline(x=side_ruler, color='blue', linestyle='dashed')
         axes[3].add_patch(rect)
 
     return t_space, side_ruler

@@ -3,7 +3,7 @@
 import os
 import matplotlib.pyplot as plt
 
-from mothra.misc import AlbumentationsTransform, label_func, _generate_parser
+from mothra.misc import AlbumentationsTransform, label_func, acc_camvid, _generate_parser
 from skimage.io import imread
 
 WSPACE_SUBPLOTS = 0.7
