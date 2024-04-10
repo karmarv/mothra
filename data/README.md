@@ -3,11 +3,11 @@
 
 #### CVAT Labeling and Data Setup
 - Labels: tags, ruler, lepidopteran 
-    ```
+    ```json
     [
-        { "name": "tags",         "id": 1, "color": "#00ff00", "type": "mask", "attributes": [] },
-        { "name": "ruler",        "id": 2, "color": "#ffff00", "type": "mask", "attributes": [] },
-        { "name": "lepidopteran", "id": 3, "color": "#ff0000", "type": "mask", "attributes": [] }
+      { "name": "tags",         "id": 1, "color": "#00ff00", "type": "mask", "attributes": [] },
+      { "name": "ruler",        "id": 2, "color": "#ffff00", "type": "mask", "attributes": [] },
+      { "name": "lepidopteran", "id": 3, "color": "#ff0000", "type": "mask", "attributes": [] }
     ]
     ```
     - [Insert Screenshot]
@@ -24,12 +24,9 @@
   - References:
     - FastAI - https://colab.research.google.com/github/visual-layer/vl-datasets/blob/main/notebooks/train-fastai.ipynb
     - FastAI - https://github.com/ashutoshraj/Dynamic-Unet/blob/master/caravan-work.ipynb
-  - Learner export Model saved upon training on Battus10 dataset
-    - Epoch10 `training_images/battus10_segmentation_test-4classes-resnet18-b2-e10.pkl`
-    - Epoch20 `training_images/battus10_segmentation_test-4classes-resnet18-b2-e20.pkl`
 - Train the models on Battus100 dataset [`train.py`](./train.py)
   - Resnet34, Batch 4, Epoch 50 with image resolution as 1200x800 
-  ```
+  ```log
     /mothra/data$ python train.py
     Unique labels: {'background': 0, 'lepidopteran': 1, 'tags': 2, 'ruler': 3}
     2024-04-09 18:15:16.092956       Total Images: 80        Sample:  /home/rahul/workspace/vision/eeb/mothra/data/battus100/training_images/images/IMG_4810.JPG
@@ -92,3 +89,38 @@
     2024-04-10 00:42:36.041505       Done
   ```
   - Resnet18, Batch 8, Epoch 50 with image resolution as 1200x800 
+  ```log
+  Wed Apr 10 11:28:40 2024
+  +-----------------------------------------------------------------------------+
+  | NVIDIA-SMI 515.65.01    Driver Version: 515.65.01    CUDA Version: 11.7     |
+  |-------------------------------+----------------------+----------------------+
+  | GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+  | Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+  |                               |                      |               MIG M. |
+  |===============================+======================+======================|
+  +-------------------------------+----------------------+----------------------+
+  |   4  NVIDIA RTX A6000    On   | 00000000:81:00.0 Off |                  Off |
+  | 30%   38C    P8    20W / 300W |  46976MiB / 49140MiB |      0%      Default |
+  |                               |                      |                  N/A |
+  +-------------------------------+----------------------+----------------------+
+
+  +-----------------------------------------------------------------------------+
+  | Processes:                                                                  |
+  |  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+  |        ID   ID                                                   Usage      |
+  |=============================================================================|
+  |    4   N/A  N/A   2229241      C   python                          46973MiB |
+  +-----------------------------------------------------------------------------+
+  ```
+  ```log
+  (mothra) /mothra/data$ time python train.py
+  2024-04-10 11:20:08.600215       Unique labels: {'background': 0, 'lepidopteran': 1, 'tags': 2, 'ruler': 3}
+  2024-04-10 11:20:08.600613       Loading segmentation masks data for images: 80          Sample:  /home/rahul/workspace/vision/eeb/mothra/data/battus100/training_images/images/IMG_4810.JPG
+  2024-04-10 11:20:23.726984       Creating Learner, initialized the UNET segmentation model
+  2024-04-10 11:22:24.357764       Train model for epochs= 50
+  epoch     train_loss  valid_loss  acc_camvid  time
+  0         1.441202    1.229148    0.787606    04:13
+  epoch     train_loss  valid_loss  acc_camvid  time
+  0         0.673551    0.307634    0.575747    18:31
+  Epoch 2/50 : |██████████████████████████████████████████████████--------------------------------------------------| 50.00% [1/2 04:46<04:46]
+  ```

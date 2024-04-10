@@ -160,18 +160,19 @@ def main(image_rgb, ruler_bin, axes=None):
     sums = np.sum(focus_numbers_filled, axis=1)
     # t_space using a scaling factor based on the grading 1mm (1x) or 0.5mm (2x) 
     t_space = 1 * fourier(sums, axes)
-    print("T space - {}".format(t_space))
-    x_single = [side_ruler + first_index,
+    print("Estimated ruler t-unit space in pixels - {:.2f}".format(t_space))
+    # Single grading on the ruler
+    y_single = [side_ruler + first_index,
                 side_ruler + first_index + t_space]
-    y = np.array([top_ruler, top_ruler])
-    x_mult = [side_ruler + first_index,
+    # 10 units of grading on the ruler 
+    y_mult = [side_ruler + first_index,
               side_ruler + first_index + t_space * 10]
-    print("x single - {}".format(x_single))
-    print("x multpl - {}".format(x_mult))
+
     # plotting.
+    x_side = np.array([y_single[1], y_single[1]])
     if axes and axes[0]:
-        axes[0].fill_betweenx(x_single, x_single[1], x_single[1] + LINE_WIDTH, color='red', linewidth=0)
-        axes[0].fill_betweenx(x_mult, x_mult[1] - LINE_WIDTH, x_mult[1], color='blue', linewidth=0)
+        axes[0].fill_betweenx(y_single, x_side, x_side + LINE_WIDTH, color='red', linewidth=0, alpha=0.7)
+        axes[0].fill_betweenx(y_mult, x_side - LINE_WIDTH, x_side, color='blue', linewidth=0, alpha=0.7)
 
     if axes and axes[3]:
         rect = patches.Rectangle((side_ruler, top_ruler+up_trim),
