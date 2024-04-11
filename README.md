@@ -38,8 +38,12 @@ Mothra analyzes images of lepidopterans — mainly butterflies and moths — and
   conda create -n mothra python=3.8
   conda activate mothra
   ```
-- Install pre-requisite packages in the above python virtual environment using -  ` pip install -r requirements.txt`
-
+- Clone the current codebase - `git clone https://github.com/karmarv/mothra.git && cd mothra`
+- Install pre-requisite packages in the activated python virtual environment using -  ` pip install -r requirements.txt`
+- Download the model
+  ```
+  wget https://github.com/karmarv/mothra/releases/download/v0.2/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl -P ./models
+  ```
 
 
 ### (A.) Evaluate measurement pipeline
