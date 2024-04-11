@@ -66,7 +66,7 @@ both = pd.merge(actual, predicted, on="image_id", how='inner')
 both['left_diff'] = both['predicted_left'] - both['actual_left']
 both['right_diff'] = both['predicted_right'] - both['actual_right']
 
-all_diffs = both['right_diff'].append(both['left_diff'])
+all_diffs = pd.concat([both['right_diff'], both['left_diff']])
 mean = np.mean(all_diffs)
 sd = np.std(all_diffs)
 

@@ -1,0 +1,460 @@
+
+Image 1/20 : IMG_0114.JPG
+Cannot evaluate orientation for ./data/battus100/val_images/images/IMG_0114.JPG.
+Couldn't determine EXIF image angle
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:12<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 30.85
+Estimated ruler t-unit space in pixels - 30.85
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:07<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 30.85
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:07<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 30.85
+Measurements:
+* left_wing: 46.26 mm
+* right_wing: 46.77 mm
+* left_wing_center: 55.47 mm
+* right_wing_center: 55.9 mm
+* wing_span: 81.0 mm
+* wing_shoulder: 4.33 mm
+Identifying position and gender...
+* Could not calculate position and gender
+
+Image 2/20 : IMG_2895.JPG
+Cannot evaluate orientation for ./data/battus100/val_images/images/IMG_2895.JPG.
+Couldn't determine EXIF image angle
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:40<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 30.71
+Estimated ruler t-unit space in pixels - 30.71
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 01:23<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 30.71
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:07<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 30.71
+Measurements:
+* left_wing: 22.8 mm
+* right_wing: 18.24 mm
+* left_wing_center: 26.78 mm
+* right_wing_center: 36.5 mm
+* wing_span: 62.67 mm
+* wing_shoulder: 27.78 mm
+Identifying position and gender...
+* Could not calculate position and gender
+
+Image 3/20 : IMG_1759.JPG
+Cannot evaluate orientation for ./data/battus100/val_images/images/IMG_1759.JPG.
+Couldn't determine EXIF image angle
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:07<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 31.06
+Estimated ruler t-unit space in pixels - 31.06
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:07<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 31.06
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:08<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 31.06
+Measurements:
+* left_wing: 43.96 mm
+* right_wing: 42.63 mm
+* left_wing_center: 52.0 mm
+* right_wing_center: 51.92 mm
+* wing_span: 75.77 mm
+* wing_shoulder: 4.96 mm
+Identifying position and gender...
+* Could not calculate position and gender
+
+Image 4/20 : IMG_0310.JPG
+Cannot evaluate orientation for ./data/battus100/val_images/images/IMG_0310.JPG.
+Couldn't determine EXIF image angle
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:52<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 31.18
+Estimated ruler t-unit space in pixels - 31.18
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:33<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 31.18
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:12<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 31.18
+Measurements:
+* left_wing: 41.72 mm
+* right_wing: 43.02 mm
+* left_wing_center: 50.17 mm
+* right_wing_center: 50.01 mm
+* wing_span: 84.19 mm
+* wing_shoulder: 5.48 mm
+Identifying position and gender...
+* Could not calculate position and gender
+
+Image 5/20 : IMG_0023.JPG
+Cannot evaluate orientation for ./data/battus100/val_images/images/IMG_0023.JPG.
+Couldn't determine EXIF image angle
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:07<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 31.06
+Estimated ruler t-unit space in pixels - 31.06
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:25<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 31.06
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:12<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 31.06
+Measurements:
+* left_wing: 38.07 mm
+* right_wing: 38.44 mm
+* left_wing_center: 46.53 mm
+* right_wing_center: 46.39 mm
+* wing_span: 73.22 mm
+* wing_shoulder: 7.09 mm
+Identifying position and gender...
+* Could not calculate position and gender
+
+Image 6/20 : IMG_0169.JPG
+Cannot evaluate orientation for ./data/battus100/val_images/images/IMG_0169.JPG.
+Couldn't determine EXIF image angle
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:08<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 31.20
+Estimated ruler t-unit space in pixels - 31.20
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:17<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 31.20
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 01:07<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 31.20
+Measurements:
+* left_wing: 42.97 mm
+* right_wing: 43.4 mm
+* left_wing_center: 51.13 mm
+* right_wing_center: 50.9 mm
+* wing_span: 77.38 mm
+* wing_shoulder: 5.4 mm
+Identifying position and gender...
+* Could not calculate position and gender
+
+Image 7/20 : IMG_4874.JPG
+Cannot evaluate orientation for ./data/battus100/val_images/images/IMG_4874.JPG.
+Couldn't determine EXIF image angle
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:07<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 31.20
+Estimated ruler t-unit space in pixels - 31.20
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 01:22<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 31.20
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:07<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 31.20
+Measurements:
+* left_wing: 42.29 mm
+* right_wing: 44.08 mm
+* left_wing_center: 50.83 mm
+* right_wing_center: 51.32 mm
+* wing_span: 82.44 mm
+* wing_shoulder: 6.33 mm
+Identifying position and gender...
+* Could not calculate position and gender
+
+Image 8/20 : IMG_0001.JPG
+Cannot evaluate orientation for ./data/battus100/val_images/images/IMG_0001.JPG.
+Couldn't determine EXIF image angle
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:10<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 31.41
+Estimated ruler t-unit space in pixels - 31.41
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:07<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 31.41
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:07<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 31.41
+Measurements:
+* left_wing: 43.83 mm
+* right_wing: 45.08 mm
+* left_wing_center: 52.93 mm
+* right_wing_center: 53.04 mm
+* wing_span: 81.48 mm
+* wing_shoulder: 5.48 mm
+Identifying position and gender...
+* Could not calculate position and gender
+
+Image 9/20 : IMG_4398.JPG
+Cannot evaluate orientation for ./data/battus100/val_images/images/IMG_4398.JPG.
+Couldn't determine EXIF image angle
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:43<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 31.06
+Estimated ruler t-unit space in pixels - 31.06
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:45<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 31.06
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:08<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 31.06
+Measurements:
+* left_wing: 38.15 mm
+* right_wing: 39.11 mm
+* left_wing_center: 45.99 mm
+* right_wing_center: 45.43 mm
+* wing_span: 73.78 mm
+* wing_shoulder: 4.52 mm
+Identifying position and gender...
+* Could not calculate position and gender
+
+Image 10/20 : IMG_2119.JPG
+Cannot evaluate orientation for ./data/battus100/val_images/images/IMG_2119.JPG.
+Couldn't determine EXIF image angle
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:07<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 31.00
+Estimated ruler t-unit space in pixels - 31.00
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:07<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 31.00
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:07<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 31.00
+Measurements:
+* left_wing: 51.01 mm
+* right_wing: 49.23 mm
+* left_wing_center: 55.84 mm
+* right_wing_center: 55.86 mm
+* wing_span: 96.95 mm
+* wing_shoulder: 1.92 mm
+Identifying position and gender...
+* Could not calculate position and gender
+
+Image 11/20 : IMG_1172.JPG
+Cannot evaluate orientation for ./data/battus100/val_images/images/IMG_1172.JPG.
+Couldn't determine EXIF image angle
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:28<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 30.67
+Estimated ruler t-unit space in pixels - 30.67
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:21<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 30.67
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:26<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 30.67
+Measurements:
+* left_wing: 40.84 mm
+* right_wing: 40.18 mm
+* left_wing_center: 50.64 mm
+* right_wing_center: 50.47 mm
+* wing_span: 68.01 mm
+* wing_shoulder: 3.59 mm
+Identifying position and gender...
+* Could not calculate position and gender
+
+Image 12/20 : IMG_0067.JPG
+Cannot evaluate orientation for ./data/battus100/val_images/images/IMG_0067.JPG.
+Couldn't determine EXIF image angle
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:13<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 31.23
+Estimated ruler t-unit space in pixels - 31.23
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:11<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 31.23
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:07<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 31.23
+Measurements:
+* left_wing: 40.4 mm
+* right_wing: 40.61 mm
+* left_wing_center: 49.98 mm
+* right_wing_center: 49.51 mm
+* wing_span: 71.8 mm
+* wing_shoulder: 5.42 mm
+Identifying position and gender...
+* Could not calculate position and gender
+
+Image 13/20 : IMG_0134.JPG
+Cannot evaluate orientation for ./data/battus100/val_images/images/IMG_0134.JPG.
+Couldn't determine EXIF image angle
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:07<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 35.44
+Estimated ruler t-unit space in pixels - 35.44
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:07<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 35.44
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:07<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 35.44
+Measurements:
+* left_wing: 46.14 mm
+* right_wing: 45.87 mm
+* left_wing_center: 55.39 mm
+* right_wing_center: 55.38 mm
+* wing_span: 80.66 mm
+* wing_shoulder: 5.7 mm
+Identifying position and gender...
+* Could not calculate position and gender
+
+Image 14/20 : IMG_0094.JPG
+Cannot evaluate orientation for ./data/battus100/val_images/images/IMG_0094.JPG.
+Couldn't determine EXIF image angle
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:23<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 35.44
+Estimated ruler t-unit space in pixels - 35.44
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:33<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 35.44
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:07<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 35.44
+Measurements:
+* left_wing: 33.36 mm
+* right_wing: 31.47 mm
+* left_wing_center: 38.23 mm
+* right_wing_center: 38.14 mm
+* wing_span: 58.38 mm
+* wing_shoulder: 3.7 mm
+Identifying position and gender...
+* Could not calculate position and gender
+
+Image 15/20 : IMG_0317.JPG
+Cannot evaluate orientation for ./data/battus100/val_images/images/IMG_0317.JPG.
+Couldn't determine EXIF image angle
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:07<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 31.09
+Estimated ruler t-unit space in pixels - 31.09
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:07<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 31.09
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:07<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 31.09
+Measurements:
+* left_wing: 44.84 mm
+* right_wing: 42.26 mm
+* left_wing_center: 54.68 mm
+* right_wing_center: 55.13 mm
+* wing_span: 76.04 mm
+* wing_shoulder: 3.96 mm
+Identifying position and gender...
+* Could not calculate position and gender
+
+Image 16/20 : IMG_3872.JPG
+Cannot evaluate orientation for ./data/battus100/val_images/images/IMG_3872.JPG.
+Couldn't determine EXIF image angle
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:07<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 31.33
+Estimated ruler t-unit space in pixels - 31.33
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:24<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 31.33
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:09<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 31.33
+Measurements:
+* left_wing: 52.26 mm
+* right_wing: 52.93 mm
+* left_wing_center: 63.29 mm
+* right_wing_center: 63.66 mm
+* wing_span: 85.66 mm
+* wing_shoulder: 4.74 mm
+Identifying position and gender...
+* Could not calculate position and gender
+
+Image 17/20 : IMG_5765.JPG
+Cannot evaluate orientation for ./data/battus100/val_images/images/IMG_5765.JPG.
+Couldn't determine EXIF image angle
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:13<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 35.61
+Estimated ruler t-unit space in pixels - 35.61
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:07<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 35.61
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:07<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 35.61
+Measurements:
+* left_wing: 48.86 mm
+* right_wing: 48.83 mm
+* left_wing_center: 56.83 mm
+* right_wing_center: 57.29 mm
+* wing_span: 88.43 mm
+* wing_shoulder: 5.31 mm
+Identifying position and gender...
+* Could not calculate position and gender
+
+Image 18/20 : IMG_2338.JPG
+Cannot evaluate orientation for ./data/battus100/val_images/images/IMG_2338.JPG.
+Couldn't determine EXIF image angle
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:07<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 30.80
+Estimated ruler t-unit space in pixels - 30.80
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:07<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 30.80
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:07<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 30.80
+Measurements:
+* left_wing: 38.21 mm
+* right_wing: 38.31 mm
+* left_wing_center: 49.54 mm
+* right_wing_center: 49.39 mm
+* wing_span: 74.17 mm
+* wing_shoulder: 7.73 mm
+Identifying position and gender...
+* Could not calculate position and gender
+
+Image 19/20 : IMG_3153.JPG
+Cannot evaluate orientation for ./data/battus100/val_images/images/IMG_3153.JPG.
+Couldn't determine EXIF image angle
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:06<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 30.71
+Estimated ruler t-unit space in pixels - 30.71
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:07<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 30.71
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:07<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 30.71
+Measurements:
+* left_wing: 41.98 mm
+* right_wing: 40.67 mm
+* left_wing_center: 49.11 mm
+* right_wing_center: 49.56 mm
+* wing_span: 72.5 mm
+* wing_shoulder: 4.03 mm
+Identifying position and gender...
+* Could not calculate position and gender
+
+Image 20/20 : IMG_2036.JPG
+Cannot evaluate orientation for ./data/battus100/val_images/images/IMG_2036.JPG.
+Couldn't determine EXIF image angle
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:07<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 30.96
+Estimated ruler t-unit space in pixels - 30.96
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:07<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 30.96
+Skip weight check and use the local weights:  models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl
+Processing U-net...
+█ |----------------------------------------| 0.00% [0/1 00:00<?] |████████████████████████████████████████| 100.00% [1/1 00:06<00:00]                                                                                                                                          Estimated ruler t-unit space in pixels - 30.96
+Measurements:
+* left_wing: 45.28 mm
+* right_wing: 42.97 mm
+* left_wing_center: 47.57 mm
+* right_wing_center: 47.69 mm
+* wing_span: 92.76 mm
+* wing_shoulder: 5.4 mm
+Identifying position and gender...
+* Could not calculate position and gender

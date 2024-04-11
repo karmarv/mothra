@@ -18,7 +18,8 @@ RULER_CROP_MARGIN = 0.025
 # Testing weights for segmentation of four classes (background, tags, ruler,
 # lepidopteran).
 #WEIGHTS_BIN = './models/battus10_segmentation_test-4classes-resnet18-b2-e20.pkl'
-WEIGHTS_BIN = './models/battus100_segmentation_test-4classes_resnet34_b4e50s800.pkl'
+#WEIGHTS_BIN = './models/battus100_segmentation_test-4classes_resnet34_b4e50s800.pkl'
+WEIGHTS_BIN = './models/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl'
 
 # Setting a tolerance in pixels on where ruler, tags can start, according to
 # the lepidopteran.
