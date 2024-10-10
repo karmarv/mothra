@@ -1,5 +1,5 @@
 
-Mothra analyzes images of lepidopterans — mainly butterflies and moths — and measures their wing lengths. Using binarization techniques and calculating the resolution of ruler ticks, we read in images of lepidopterans and output the millimeter lengths of their wings.
+This is a collaboration between Chaturvedi Lab at Tulane EEB and Rahul Vishwakarma, and image and vision processing scientist at Hitachi America Ltd. Mothra analyzes images of lepidopterans — mainly butterflies and moths — and measures their wing lengths. Using binarization techniques and calculating the resolution of ruler ticks, we read in images of lepidopterans and output the millimeter lengths of their wings. 
 
 > Reference: Mothra [README.md](./README.OG.md) from https://github.com/machine-shop/mothra
 
