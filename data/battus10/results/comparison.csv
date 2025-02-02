@@ -1,0 +1,4 @@
+,image_id,actual_left,actual_right,predicted_left,predicted_right,left_wing_center (mm),right_wing_center (mm),wing_span (mm),wing_shoulder (mm),position,gender,prob_upside_down,prob_female,prob_male,left_diff,right_diff,left_SD,right_SD,is_outlier
+2,IMG_2895.JPG,46,46,22.8,18.24,26.78,36.5,62.67,27.78,,,N,/,A,-23.2,-27.76,-1.2040709448804248,-1.6048907654416662,
+0,IMG_3870.JPG,52,52,50.72,50.31,60.55,60.57,82.88,3.2,,,N,/,A,-1.2800000000000011,-1.6899999999999977,0.7226769644841387,0.6866383402670098,
+1,IMG_4541.JPG,47,46,45.17,44.75,53.6,54.01,81.7,4.71,,,N,/,A,-1.8299999999999983,-1.25,0.6743324685831119,0.7253139369878311,

@@ -25,7 +25,7 @@ This is a collaboration between Chaturvedi Lab at Tulane EEB and Rahul Vishwakar
   - Updated results in [./data/battus100/results/val_images/results.csv](./data/battus100/results/val_images/results.csv)
 - [ ] Compare predictions with the manual measured ground truth [Apr/12/2024] [(reference)](#b-compare-the-predicted-results-to-manual-labels)
   - Tested on 3 evaluation ground truth samples using the [./result_plotting.py](./result_plotting.py)
-  - Evaluate for outliers on Battus100 ground truth samples
+  - Evaluate for outliers on Battus100 validation ground truth [./result_plotting.py](./result_plotting.py)
 - [ ] Run the model on all museum specimens to generate results 
 - [ ] Spot check the results on random images for verification
 
@@ -37,16 +37,27 @@ This is a collaboration between Chaturvedi Lab at Tulane EEB and Rahul Vishwakar
   - Create a virtual environment named "`mothra`" for this analysis
     ```bash
     conda env remove -n mothra
-    conda create -n mothra python=3.8
+    conda create -n mothra python=3.10
     conda activate mothra
     ```
+    - In case of GPU environment setup the CUDA variables
+    ```bash
+    #export CUDA_HOME="/usr/local/cuda-12.6"
+    export CUDA_HOME="/usr/local/cuda-11.8"
+    export PATH=$CUDA_HOME/bin:$PATH
+    export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
+    ```
+
 - Clone the current codebase - `git clone https://github.com/karmarv/mothra.git && cd mothra`
 - Install pre-requisite packages in the activated python virtual environment using -  ` pip install -r requirements.txt`
 - Download the model
   ```bash
   wget https://github.com/karmarv/mothra/releases/download/v0.2/battus100_segm_c4_resnet18_b8_e50_s1200x800.pkl -P ./models
   ```
-
+- Test torch and CUDA version
+  ```bash
+  python -c 'import torch; from torch.utils.cpp_extension import CUDA_HOME; print(torch.__version__, torch.cuda.is_available(), CUDA_HOME)'
+  ```
 
 ### (A.) Evaluate measurement pipeline
 - Overall measurement pipeline test run on [./data/battus10/val_images/](./data/battus10/val_images/)
@@ -98,9 +109,14 @@ This is a collaboration between Chaturvedi Lab at Tulane EEB and Rahul Vishwakar
   ```
   - Check the pipeline run log at [./data/battus100/results/val_images/eval_b100.log](./data/battus100/results/val_images/eval_b100.log)
 
+- Modified pipeline for server run
+  - [TODO] Input a CSV file for processing with each row containing (a.) Dorsal: "input_path1" and (b.) Ventral: "input_path2" image
+  ```bash
+  time python pipeline_battus.py --detailed_plot -ar -i ./data/metadata/231017_Battus_philenor_polydamas_FLMNH.csv -o ./data/results/images -csv ./data/results/results.csv
+  ```
 
 ### (B.) Compare the predicted results to manual labels
-- Use the available result plotting utility 
+- Battus10: Validation test against manual measurements
   ```
   python result_plotting.py --actual data/battus10/val_images/manual_labels.csv  --name "image_id" --left "left_wing (mm)" --right "right_wing (mm)" --predicted data/battus10/results/val_images/results.csv --comparison --outliers
   ```
@@ -117,7 +133,23 @@ This is a collaboration between Chaturvedi Lab at Tulane EEB and Rahul Vishwakar
   Saved all differences to comparison.csv
   Saved 0 rows to outliers.csv
   ```
+- Battus100: Validation test against manual measurements
+  ```
+  python result_plotting.py --actual data/battus100/val_images/manual_measurements_gt.csv  --name "image_id" --left "left_wing (mm)" --right "right_wing (mm)" --predicted data/battus100/results/val_images/results.csv --comparison --outliers
+  ```
+  ```log
+  DIFFERENCE STATISTICS
+      Mean Differences: -1.5292105263157902
+      Differences SD: 3.313038342811901.
+      Lower Bound (-2 SD) of Differences: -8.155287211939592
+      Upper Bound (+2 SD) of Differences: 5.096866159308012
+      Number of outlying measurements: 2
+      Number of images with outlying measurements: 1
 
+  Saved plot of differences to result_plot.png
+  Saved all differences to comparison.csv
+  Saved 1 rows to outliers.csv
+  ```
 
 ### (C.) Evaluate the core image segmentation model
 - Segmentation model test on [./data/battus10/val_images/](./data/battus10/val_images/)

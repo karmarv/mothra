@@ -1,0 +1,2 @@
+,image_id,actual_left,actual_right,predicted_left,predicted_right,left_wing_center (mm),right_wing_center (mm),wing_span (mm),wing_shoulder (mm),position,gender,prob_upside_down,prob_female,prob_male,left_diff,right_diff,left_SD,right_SD
+11,IMG_2036.JPG,60.25,56.44,45.28,42.97,47.57,47.69,92.76,5.4,,,N,/,A,-14.969999999999999,-13.469999999999999,-4.056937494504366,-3.6041808871881664
