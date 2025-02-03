@@ -26,7 +26,10 @@ def export_eval_image_paths(metadata_df, output_file="eval_image_paths.txt"):
 # Read the results.csv file and update the corresponding metadata CSV with dorsal and ventral measurement
 
 """
-
+Purpose/Workflow 
+- [Done] Read the metadata CSV/Excel file and produce a list of image files that needs to be processed by the Mothra 
+- [TODO] Execute Mothra on the provided list of image file paths
+- [TODO] Match and insert the results as a new column in the metadata CSV/Excel file for downstream assessment
 
 """
 if __name__ == "__main__":

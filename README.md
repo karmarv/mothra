@@ -112,7 +112,8 @@ This is a collaboration between Chaturvedi Lab at Tulane EEB and Rahul Vishwakar
 - Modified pipeline for server run
   - [TODO] Input a CSV file for processing with each row containing (a.) Dorsal: "input_path1" and (b.) Ventral: "input_path2" image
   ```bash
-  time python pipeline_battus.py --detailed_plot -ar -i ./data/metadata/231017_Battus_philenor_polydamas_FLMNH.csv -o ./data/results/images -csv ./data/results/results.csv
+  python data/metadata/process_image_metadata.py 
+  time python pipeline_battus.py --detailed_plot -ar -i ./data/metadata/eval_image_paths.txt -o ./data/results/images -csv ./data/results/results.csv
   ```
 
 ### (B.) Compare the predicted results to manual labels
