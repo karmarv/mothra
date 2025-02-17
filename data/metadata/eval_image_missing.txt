@@ -1,0 +1,32 @@
+image_missing
+/home/rahul/workspace/data/UF_museum_data_2023/Battus philenor/Kailee Stover/20230410/IMG_1312.JPG
+/home/rahul/workspace/data/UF_museum_data_2023/Battus philenor/Kailee Stover/20230410/IMG_1313.JPG
+/home/rahul/workspace/data/UF_museum_data_2023/Battus philenor/Kailee Stover/20230410/IMG_1314.JPG
+/home/rahul/workspace/data/UF_museum_data_2023/Battus philenor/Kailee Stover/20230410/IMG_1315.JPG
+/home/rahul/workspace/data/UF_museum_data_2023/Battus philenor/Kailee Stover/20230410/IMG_1316.JPG
+/home/rahul/workspace/data/UF_museum_data_2023/Battus philenor/Kailee Stover/20230410/IMG_1317.JPG
+/home/rahul/workspace/data/UF_museum_data_2023/Battus philenor/Kailee Stover/20230410/IMG_1318.JPG
+/home/rahul/workspace/data/UF_museum_data_2023/Battus philenor/Kailee Stover/20230410/IMG_1319.JPG
+/home/rahul/workspace/data/UF_museum_data_2023/Battus philenor/Kailee Stover/20230505/IMG_1902.JPG
+/home/rahul/workspace/data/UF_museum_data_2023/Battus philenor/Kailee Stover/20230508/IMG_ 1981.JPG
+/home/rahul/workspace/data/UF_museum_data_2023/Battus philenor/Kailee Stover/20230518/IMG_2342.JPG
+/home/rahul/workspace/data/UF_museum_data_2023/Battus philenor/Kailee Stover/20230602/IMG_0430.JPG
+/home/rahul/workspace/data/UF_museum_data_2023/Battus philenor/Kailee Stover/20230602/IMG_0431.JPG
+/home/rahul/workspace/data/UF_museum_data_2023/Battus polydamas/Kailee Stover/20230616/IMG_0330.JPG
+/home/rahul/workspace/data/UF_museum_data_2023/Battus polydamas/Kailee Stover/20230616/IMG_0331.JPG
+/home/rahul/workspace/data/UF_museum_data_2023/Battus polydamas/Kailee Stover/20230712/IMG_0156.JPG
+/home/rahul/workspace/data/UF_museum_data_2023/Battus philenor/Marcela Diaz/20230410/IMG_2496.JPG
+/home/rahul/workspace/data/UF_museum_data_2023/Battus philenor/Marcela Diaz/20230414/IMG_1811.JPG
+/home/rahul/workspace/data/UF_museum_data_2023/Battus philenor/Marcela Diaz/20230425/IMG_2137.JPG
+/home/rahul/workspace/data/UF_museum_data_2023/Battus philenor/Marcela Diaz/20230509/IMG_3019.JPG
+/home/rahul/workspace/data/UF_museum_data_2023/Battus philenor/Marcela Diaz/20230509/IMG_3020.JPG
+/home/rahul/workspace/data/UF_museum_data_2023/Battus philenor/Marcela Diaz/20230515/IMG_3357.JPG
+/home/rahul/workspace/data/UF_museum_data_2023/Battus philenor/Marcela Diaz/20230525/IMG_3865.JPG
+/home/rahul/workspace/data/UF_museum_data_2023/Battus philenor/Marcela Diaz/20230602/IMG_4259.JPG
+/home/rahul/workspace/data/UF_museum_data_2023/Battus philenor/Marcela Diaz/20230607/IMG_4513.JPG
+/home/rahul/workspace/data/UF_museum_data_2023/Battus polydamas/Marcela Diaz/20230616/IMG_ 4973.JPG
+/home/rahul/workspace/data/UF_museum_data_2023/Battus polydamas/Marcela Diaz/20230630/IMG_4344.JPG
+/home/rahul/workspace/data/UF_museum_data_2023/Battus polydamas/Marcela Diaz/20230706/IMG_3474.JPG
+/home/rahul/workspace/data/UF_museum_data_2023/Battus polydamas/Marcela Diaz/20230706/IMG_3475.JPG
+/home/rahul/workspace/data/UF_museum_data_2023/Battus polydamas/Marcela Diaz/20230706/IMG_5461.JPG
+/home/rahul/workspace/data/UF_museum_data_2023/Battus polydamas/Marcela Diaz/20230711/IMG_5643.JPG
